@@ -151,6 +151,8 @@ exports.submitRecipeOnPost = async(req, res) => {
   }
 } 
 
+// INFO
+
 exports.about = async(req, res) => {
   res.render('about', { title: 'Cafe - About'} );
 } 
@@ -160,10 +162,14 @@ exports.contact = async(req, res) => {
 } 
 
 
+
+
+
+
 // UPDATE inside Database
 // async function updateRecipe() {
 //   try {
-//     const res = await Recipe.updateOne({ name: 'Happy Coffee'}, {name: 'New Happy Coffee Updated'});
+//     const res = await Recipe.updateOne({ name: 'a'}, {name: 'a test'});
 //     res.n;
 //     res.nModified;
 //   } catch(error) {
@@ -176,7 +182,7 @@ exports.contact = async(req, res) => {
 // Delete inside Database
 // async function deleteRecipe() {
 //   try {
-//     await Recipe.deleteOne({ name: 'test coffee'});
+//     await Recipe.deleteOne({ name: 'test'});
 //   } catch(error) {
 //     console.log(error);
 //   }
